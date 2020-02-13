@@ -175,5 +175,5 @@ class ANN2:
     def _update_inputs_adversial(self, x, X_target, learning_rate, _lambda):
         for i in range(x.shape[0]):
             delta = sum([node_['weights'][i] * node_['delta'] for node_ in self.network[0]])
-            x[i] += learning_rate * delta + _lambda * (X_target[i] - x[i]) 
+            x[i] += learning_rate * (delta + _lambda * (X_target[i] - x[i])) 
         return x
