@@ -128,10 +128,13 @@ class ANN2:
             
         self.adversial_loss = []
         self.adversial_epoch_error = []
-        
+        self.adversial_images = []
 #         x = np.copy(X_target)
         np.random.seed(seed)
+        self.adversial_images.clear()
         x = np.random.randint(1,255+1, size=(self.input_dim,),)/255
+        self.adversial_images.append(x)
+        #print(self.adversial_images[-1])
         
         for epoch in range(epochs):
             self._forward_pass_adversial(x) # forward pass (update node["output"])
@@ -142,7 +145,9 @@ class ANN2:
                 print("Epoch --- ",epoch," MSE : ",self.adversial_loss[-1])
             self.adversial_epoch_error.clear()
             x = self._update_inputs_adversial(x, X_target, learning_rate, _lambda) # update weights (update node["weight"])
-        return x
+            self.adversial_images.append(x)
+            #print(self.adversial_images[-1])
+        return x, self.adversial_images
     
     def _forward_pass_adversial(self, x):
         x_in = x
