@@ -1,4 +1,5 @@
-*.csv
-\data
+mnist_train.csv
+mnist_test.csv
+data
 \files
 \sudo
