@@ -1,0 +1,26 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Artificial Neural Networks}{section.1}% 2
+\BOOKMARK [3][-]{subsubsection.1.1.1}{Motivation From Biology}{subsection.1.1}% 3
+\BOOKMARK [3][-]{subsubsection.1.1.2}{Perceptron}{subsection.1.1}% 4
+\BOOKMARK [3][-]{subsubsection.1.1.3}{Towards Neural Nets}{subsection.1.1}% 5
+\BOOKMARK [2][-]{subsection.1.2}{Deep Neural Networks}{section.1}% 6
+\BOOKMARK [1][-]{section.2}{Adversarial machine learning}{}% 7
+\BOOKMARK [1][-]{section.3}{History}{}% 8
+\BOOKMARK [1][-]{section.4}{Definitions and Notations}{}% 9
+\BOOKMARK [1][-]{section.5}{Threat Model}{}% 10
+\BOOKMARK [2][-]{subsection.5.1}{Adversary's Goal}{section.5}% 11
+\BOOKMARK [2][-]{subsection.5.2}{Adversary's Knowledge}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.3}{Victim Models}{section.5}% 13
+\BOOKMARK [1][-]{section.6}{Some Adversarial Attacks}{}% 14
+\BOOKMARK [1][-]{section.7}{Non-Targeted and Targeted Attacks}{}% 15
+\BOOKMARK [2][-]{subsection.7.1}{Non-Targeted Attacks}{section.7}% 16
+\BOOKMARK [2][-]{subsection.7.2}{Targeted Attacks}{section.7}% 17
+\BOOKMARK [2][-]{subsection.7.3}{Performing a Targeted Attack}{section.7}% 18
+\BOOKMARK [2][-]{subsection.7.4}{Generated adversarial images and results}{section.7}% 19
+\BOOKMARK [1][-]{section.8}{Protecting Against Adversarial Attacks}{}% 20
+\BOOKMARK [2][-]{subsection.8.1}{Binary Thresholding}{section.8}% 21
+\BOOKMARK [2][-]{subsection.8.2}{Adversarial training}{section.8}% 22
+\BOOKMARK [2][-]{subsection.8.3}{Defensive distillation}{section.8}% 23
+\BOOKMARK [2][-]{subsection.8.4}{Why is defending neural networks so hard?}{section.8}% 24
+\BOOKMARK [1][-]{section.9}{Conclusion}{}% 25
+\BOOKMARK [1][-]{section*.16}{Appendices}{}% 26

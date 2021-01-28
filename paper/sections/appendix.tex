@@ -1,0 +1,74 @@
+% \crefname{appsec}{Appendix}{Appendices}
+
+\appendixtitleon
+\begin{appendices}
+    \setcounter{equation}{0}
+    \numberwithin{equation}{section}
+
+    \crefalias{section}{appsec}
+
+    \section*{Derivation of learning rules}\label{apendix:derivation_of_learning_rule} 
+
+        Consider a trained three-layered neural network with structure $(L-M-N)$. The trained network consists of $L$ inputs node, $M$ hidden neurons, and $N$ output neurons. The output of $m^{th}$ neuron $Y_m$ is computed by activation function of net potential ($V_m$), where $V_m$ and $Y_m$ are defined respectively as: 
+        \begin{align} \label{eqn:Vm}
+            V_m =  \sum \limits_{l=1}^{L} w_{lm}x_{l} + w_{0m}x^{0}
+        \end{align} and	
+        \begin{align}\label{eqn:Ym}	
+            Y_m =&\quad f(V_m)
+        \end{align}
+        Similarly, the respective net potential ($V_n$) and output ($Y_n$) of $n^{th}$ output neuron from [] are given as:
+        \begin{align}\label{eqn:Vn}
+            V_n =\sum \limits_{m=1}^{M} w_{mn}Y_{m} + w_{0n}x^{0} 
+        \end{align} and 
+        \begin{align} \label{eqn:Yn}
+            Y_n =& \quad f(V_n)  
+        \end{align}
+        Let $Y_n^D$ be the desired fabricated output at $n^{th}$ neuron, then the error, $e_n^Y$ at $n^{th}$ output neuron is calculated through the difference between $Y_n^D$ and $Y_n$, which is expressed as
+        \begin{align} \label{eqn:eny} 
+            e_n^Y =& Y_n^D - Y_n
+        \end{align} 
+        and let $x_l^D$ be the desired input at $l^{th}$ neuron, then the error, $e_n^x$ at $l^{th}$ input neuron is calculated through the difference between $x_l^D$ and $x_l$, which is expressed as
+        \begin{align} \label{eqn:enx} 
+            e_n^x =& x_l^D - x_l
+        \end{align} 
+        The cost function $E$ (MSE) can be calculated by
+        \begin{align} \label{eqn:mse}
+            E =& \quad \frac{1}{2N} \sum \limits_{n=1}^{N} (e_n^Y)^{2} + \lambda \frac{1}{2L} \sum \limits_{l=1}^{L} (e_n^x)^{2}
+        \end{align}
+         
+        During adversarial input generation, inputs are adapatble instead of network weights. The gradient-decent based backpropogation is used to minimize the cost function. The current input $x^{old}$ is updated to $x^{new}$ using $\Delta x$ as 
+        \begin{align} \label{eqn:update_rule}
+            x^{old} = x^{new} + \Delta x
+        \end{align}
+        where $\Delta x$ is propotional to negative gradient of cost function $(\nabla_{x}E)$.
+        \begin{align} \label{eqn:delta_x}
+            \Delta x &= - \eta \nabla_{x} E \nonumber \\ 
+                     &= - \eta \cdot \frac{\delta E}{\delta x}
+        \end{align}
+        For input $x_{l}$, $- \delta E / \delta x_{l}$ is derived using chain rule of derivation.
+        \begin{align} \label{eqn:delta_e_x}
+            - \frac{\delta E }{\delta x_{l}} = \frac{1}{N} \sum \limits_{n=0}^{N} \left\{ e_n^Y \cdot f'(V_n) \cdot \frac{\delta V_n}{\delta x_l} \right\} + \frac{\lambda}{L} e_n^x
+        \end{align}
+        Now, subsituting \cref{eqn:delta_e_x} in \cref{eqn:delta_x} yields 
+        \begin{align} \label{eqn:delta_x_2}
+            \Delta x  = \frac{\eta}{N} \left\{ \sum \limits_{n=0}^{N} \vartheta_{n} w_{mn} \right\} \nabla_{x_l} Y_m + \lambda \frac{\eta}{L} e_n^x
+        \end{align}
+        where $\vartheta_{n} = e_n^Y f'(V_n) $
+
+        Now using \cref{eqn:Ym,eqn:Vm}, $\nabla_{x_l} Y_m$ can further be simplified using chain rule of derivation
+        \begin{align} \label{eqn:nabla_vn}
+            \nabla_{x_l} Y_m &= \sum \limits_{m=0}^{M} \left\{ f'(V_m) \frac{\delta V_m}{\delta x_l} \right\} \nonumber \\
+            &= \sum \limits_{m=0}^{M} f'(V_m) w_{lm}
+        \end{align}
+        
+        Now, subsituting \cref{eqn:nabla_vn} in \cref{eqn:delta_x_2} yields
+
+        \begin{align} \label{eqn:final_learning_eqn}
+            \Delta x= \frac{\eta}{N} \sum \limits_{m=0}^{M} \vartheta_{m} w_{lm} + \lambda \frac{\eta}{L} e_n^x
+        \end{align}
+        where,
+        \begin{align}
+            \vartheta_{m} = \left\{ \sum \limits_{n=0}^{N} \vartheta_{n} w_{mn} \right\} f'(V_m) \nonumber
+        \end{align}      
+
+\end{appendices}

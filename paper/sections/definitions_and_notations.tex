@@ -1,0 +1,75 @@
+\section{Definitions and Notations}
+    In this section, a brief introduction to the key components of model attacks and defences is presented. I  hope that my explanations can help audience to understand the main components of the related works on adversarial attacks and their countermeasures. By answering the following questions, we define the main terminology:
+
+    \begin{itemize}
+        \item \textit{Adversary's Goal} 
+
+        What is the goal or purpose of the attacker? Does he want to misguide the classifier's decision on one sample, or influence the overall performance of the classifier?
+        \item \textit{Adversary's Knowledge}
+
+        What information is available to the attacker? Does he know the classifier's structure, its parameters or the training set used for classifier training?
+        \item \textit{Victim Models}
+
+        What kind of deep learning models do adversaries usually attack? Why are adversaries interested in attacking these models?
+        \item \textit{Security Evaluation}
+
+        How can we evaluate the safety of a victim model when faced with adversarial examples? What is the relationship and difference between these security metrics and other model goodness metrics, such as accuracy or risks?
+    \end{itemize}
+
+	\section{Threat Model}
+		\subsection{Adversary's Goal}
+		\begin{itemize}
+		\item \textit{Poisoning Attack vs Evasion Attack}
+		
+		Poisoning attacks refer to the attacking algorithms that allow an attacker to insert/modify several fake samples into the training database of a DNN algorithm. These fake samples can cause failures of the trained classifier. They can result in the poor accuracy, or wrong prediction on some given test samples. This type of attacks frequently appears in the situation where the adversary has access to the training database. For example, web-based repositories and “honeypots” often collect malware examples for training, which provides an opportunity for adversaries to poison the data.
+		
+		In evasion attacks, the classifiers are fixed and usually have good performance on benign testing samples. The adversaries do not have authority to change the classifier or its parameters, but they craft some fake samples that the classifier cannot recognize. In other words, the adversaries generate some fraudulent examples to evade detection by the classifier. For example, in autonomous driving vehicles, sticking a few pieces of tapes on the stop signs can confuse the vehicle's road
+sign recognizer.		
+
+			\item \textit{Targeted Attack vs Non-Targeted Attack}
+			
+			In targeted attack, when the victim sample $(x, y)$ is given, where $x$ is feature vector and $y \in Y$ is the ground truth label of $x$, the adversary aims to induce the classifier to give a specific label $t \in Y$ to the perturbed sample $x'$. For example, a fraudster is likely to attack a financial company's credit evaluation model to disguise himself as a highly credible client of this company.
+
+If there is no specified target label $t$ for the victim sample $x$, the attack is called non-targeted attack. The adversary only wants the classifier to predict incorrectly.
+		\end{itemize}
+
+		\subsection{Adversary's Knowledge}		
+            \begin{itemize}
+                \item \textit{White-Box Attack}
+                
+                In a white-box setting, the adversary has access to all the information of the target neural network, including its architecture, parameters, gradients, etc. The adversary can make full use of the network information to carefully craft adversarial examples. White-box attacks have been extensively studied because the disclosure of model architecture and parameters helps people understand the weakness of DNN models clearly and it can be analysed mathematically. Security against white-box attacks is the property that we desire ML models to have.
+            
+                \item \textit{Black-Box Attack}
+                In a black-box attack setting, the inner configuration of DNN models is unavailable to adversaries. Adversaries can only feed the input data and query the outputs of the models. They usually attack the models by keeping feeding samples to the box and observing the output to exploit the model's input-output relationship, and identity its weakness. Compared to white-box attacks, black-box attacks are more practical in applications because model designers usually do not open source their model parameters for proprietary reasons.	
+            
+                \item \textit{Semi-white (Gray) Box Attack}	
+                
+                In a semi-white box or gray box attack setting, the attacker trains a generative model for producing adversarial examples in a white-box setting. Once the generative model is trained, the attacker does not need victim model any more, and can craft adversarial examples in a black-box setting.
+            \end{itemize}
+            
+		\subsection{Victim Models}
+    		Following machine learning models are susceptible to adversarial examples, and some popular deep learning architectures used in image, graph and text data domains.
+		
+            \begin{enumerate}
+                \item \textbf{Conventional Machine Learning Models}
+                
+                For conventional machine learning tools, there is a long history of studying safety issues. Some researchers have attacked SVM classifiers and fully-connected shallow neural networks for the MNIST dataset. Some of them examined the security of SpamBayes, a Bayesian method based spam detection software. The security of Naive Bayes classifiers is also checked. Many of these ideas and strategies have been adopted in the study of adversarial attacks in deep neural networks.
+                \item \textbf{Deep Neural Networks}
+                
+                Different from traditional machine learning techniques which require domain knowledge and manual feature engineering, DNNs are end-to-end learning algorithms. The models use raw data directly as input to the model, and learn objects underlying structures and attributes. The end-to-end architecture of DNNs makes it easy for adversaries to exploit their weakness, and generate high-quality deceptive inputs (adversarial examples). Moreover, because of the implicit nature of DNNs, some of their properties are still not well understood or interpretable. Therefore, studying the security issues of DNN models is necessary. Next, I have briefly introduced some of popular victim deep learning models which are used as “benchmark” models in attack/defence studies.
+                    \begin{itemize}
+                        \item \textit{Fully-Connected Neural Networks}
+                        
+                        Fully-connected neural networks (FC) are composed of layers of artificial neurons. In each layer, the neurons take the input from previous layers, process it with the activation function and send it to the next layer; the input of first layer is sample $x$, and the (softmax) output of last layer is the score $F(x)$.
+                        \item \textit{Convolutional Neural Networks}		
+                        
+                        In computer vision tasks, Convolutional Neural Networks is one of the most widely used models. CNN models aggregate the local features from the image to learn the representations of image objects. CNN models can be viewed as a sparse-version of fully connected neural networks: most of the weights between layers are zero. Its training algorithm or gradients calculation can also be inherited from fully connected neural networks.
+                        \item \textit{Graph Convolutional Networks}
+                        
+                        The graph convolutional networks later became a popular node classification model for graph data. The idea of graph convolutional networks is similar to CNN. It aggregates the information from neighbour nodes to learn representations for each node $v$, and outputs the score $F(v,X)$ for prediction.
+                        
+                        \item \textit{Recurrent Neural Networks}
+                        
+                        Recurrent Neural Networks are very useful for tackling sequential data. As a result, they are widely used in natural language processing. The RNN models, especially LSTM are able to store the previous time information in memory, and exploit useful information from previous sequence for next-step prediction.
+                    \end{itemize}
+            \end{enumerate}
