@@ -7,6 +7,8 @@
 \usepackage[draft]{minted}
 \usepackage{graphicx}
 \usepackage{titlesec}
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage[noend]{algpseudocode}
 \usepackage[colorlinks=true]{hyperref}
 \usepackage{cleveref}
 \usepackage{cite}
@@ -18,26 +20,32 @@
 \title{Adversarial Attack}
 
 \begin{document}
-\maketitle
+    \maketitle
 
-\input{sections/abstract.tex}
+    % \input{sections/abstract.tex}
 
-\input{sections/introduction.tex}
+    % \input{sections/introduction.tex}
 
-\input{sections/adversarial_machine_learning.tex}
+    \input{sections/learning_rule.tex}
 
-\input{sections/definitions_and_notations.tex}
+    \input{sections/algorithms.tex}
 
-\input{sections/some_adversarial_attacks.tex}
+    \input{sections/performance.tex}
 
-\input{sections/non_targeted_and_targated_attacks.tex}
+    % \input{sections/adversarial_machine_learning.tex}
 
-\input{sections/protecting_agains_adversarial.tex}
+    % \input{sections/definitions_and_notations.tex}
 
-\input{sections/conclusion.tex}
+    % \input{sections/some_adversarial_attacks.tex}
 
-\input{sections/appendix.tex}
+    % \input{sections/non_targeted_and_targated_attacks.tex}
 
-\bibliography{mybib}{}
-\bibliographystyle{plain}
+    % \input{sections/protecting_agains_adversarial.tex}
+
+    % \input{sections/conclusion.tex}
+
+    \input{sections/appendix.tex}
+
+    \bibliography{mybib}{}
+    \bibliographystyle{plain}
 \end{document}

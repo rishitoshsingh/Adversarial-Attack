@@ -1,0 +1,74 @@
+
+\SetKwInOut{Input}{input}
+\SetKwInOut{Output}{output}
+
+\begin{algorithm}[!h]
+	\caption{Generate Adversarial Image}
+	\label{alg:generate_image}
+	\SetAlgoLined
+	\Input{Desired input ($x^{Adv}$), Desired adversary output ($Y^{Adv}$), $\eta$, $\lambda$, Epochs }
+	\Output{NULL}
+
+	$x \leftarrow x^{Adv}$ \\
+	\While{Epochs \textbf{is not} 0}{
+		Forward-pass($x$) \\
+		Backward-adversarial-pass($Y^{Adv}$)  \\
+		Update-inputs($x, x^{Adv}, \eta, \lambda$)\\
+		Epochs $\leftarrow$ Epochs $- 1$
+	}
+\end{algorithm}
+
+\begin{algorithm}[!h]
+	\caption{Forward-pass}
+	\label{alg:forward_pass}
+	\SetAlgoLined
+	\Input{Input Vector ($x$)}
+	\Output{Predicted Output Vector ($y$)}
+	\For{ i $\leftarrow  0$ \KwTo num\_layers $-1$  }{
+		\ForEach {neuron, m \textbf{in} $layer_{i}$} {
+			$V_m^{i} \leftarrow \displaystyle{\sum \limits_{l=1}^{len(x)} w_{lm}x_{l} + w_{0m}x^{0}}$ \\
+			$Y_m^{i} \leftarrow f(V_m^{i})$		
+		}
+		$x \leftarrow Y^{i}$\\
+	}  
+\end{algorithm}
+
+\begin{algorithm}[!h]
+	\caption{Backward-adversarial-pass}
+	\label{alg:backward_pass}
+	\SetAlgoLined
+	\Input{Predicted Output Vector ($y$)}
+	\Output{NULL}
+	\For{ i $\leftarrow$ num\_layers $-1$ \KwTo $0$  }{
+		\If {$layer_{i}$ \textbf{is} Output-Layer}{
+			\ForEach {neuron, n \textbf{in} $layer_{i}$} {
+				$\Delta_{n}^{i} \leftarrow \Big\{ e_n^{i} \cdot f'(V_n^{i}) \Big\} $\\
+			}
+		}
+		\Else{
+			\ForEach { neuron, m \textbf{in} $layer_{i}$} {
+				$e_m^{i}  \leftarrow 0$ \\
+				\ForEach {neuron, n \textbf{in} $layer_{i+1}$} {
+					$e_m^{i} \leftarrow e_m^{i} + \Big\{ w_{mn} \cdot \Delta_{n}^{i+1}   \Big\} $ \\
+				}			
+				$\Delta_{m}^{i} \leftarrow \Big\{ e_m^{i} \cdot f'(V_m^{i}) \Big\} $\\
+
+			} 	
+		} 
+	}  
+\end{algorithm}
+
+
+\begin{algorithm}[!h]
+	\caption{Update-inputs}
+	\label{alg:update_weights}
+	\SetAlgoLined
+	\Input{Input Vector ($x$), Desired input ($x^D$), $\eta$, $\lambda$}
+	\Output{NULL}	
+		\For{ i $\leftarrow 0$ \KwTo $len(x) - 1$} {
+				$x_i \leftarrow x^i + \dfrac{\eta}{N} \left\{ \Delta_{i}^{0}  + \lambda \cdot (x_i^D - x_i) \right\} $\\
+				\tcp*[f]{N is the number of output neurons}
+				$x_i \leftarrow x^i + \eta \left\{ \dfrac{1}{N} \Delta_{i}^{0}  + \dfrac{\lambda}{L} \cdot (x_i^D - x_i) \right\} $\\
+
+		}				
+\end{algorithm}

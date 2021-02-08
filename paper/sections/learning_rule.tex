@@ -1,0 +1,34 @@
+\section{Learning Rule}
+
+    Consider a trained three-layered (L-M-N) artificial neural network (ANN) of conventional neurons. The trained ANN consists of L number of input neurons, M number of hidden neurons, and N number of output neurons. The net potential of $m^{th}$ conventional hidden neuron is defined as 
+    \begin{equation}
+        V_m = \sum \limits_{l=1}^{L} w_{lm}x_{l} + w_{0m}x^{0}
+    \end{equation}
+    and its output is defined as 
+    \begin{equation}
+        Y_m = \quad f(V_m)
+    \end{equation}
+    Similarly, the net potential of $n^{th}$ output neuron is defined as
+    \begin{equation}
+        V_n = \sum \limits_{m=1}^{M} w_{mn}Y_{m} + w_{0n}x^{0}
+    \end{equation}
+    and its output is defined as 
+    \begin{equation}
+        Y_n = \quad f(V_n)
+    \end{equation}
+
+    Let $Y_n^D$ be the desired output and $Y_n^{Adv}$ be desired adversary output of the $n_{th}$ output neuron. Since the network's already trained, $Y_n^D - Y_n$ will be very small. Adversarial error due to output $(e_n^Y)$ can be calculated as $e_n^Y = Y_n^{Adv} - Y_n$. Adversary's goal is to generate a slightly perturbed version of $x^{Adv}$. To make small perturbations in the image, error $e^x$ is introduced. For $l_{th}$ input this error can be calculated as $e_l^x = x_l^{Adv} - x_l$. The cost function $(E)$ can be calculated using the mean square of both $e^Y$, and $e^x$ adversarial errors and expressed as
+    \begin{equation}\label{eqn:error_function}
+        E = \quad \frac{1}{2N} \sum \limits_{n=1}^{N} (e_n^Y)^{2} + \lambda \frac{1}{2L} \sum \limits_{l=1}^{L} (e_l^x)^{2}
+    \end{equation}
+    where, $\lambda$ is real number in range $(0,\infty)$ for target adversarial attack and for non-target adversarial attack, $\lambda = 0$. The goal is to keep reducing error $(E)$ by updating input $(x)$. The update rule adds the error gradient to input as 
+    \begin{equation}\label{eqn:input_update_rule}
+        x^{old} = x^{new} + \Delta x
+    \end{equation} 
+    For particular input $(x_l)$, $\Delta x_l$ can be calculated as
+    \begin{equation}\label{eqn:delta_x_l}
+        \Delta x_l= \frac{\eta}{N} \sum \limits_{m=0}^{M} \delta_{m} w_{lm} + \lambda \frac{\eta}{L} e_l^x
+    \end{equation} 
+    where, $$\delta_{m} = \left\{ \sum \limits_{n=0}^{N} \delta_{n} w_{mn} \right\} f'(V_m)$$, and $$\delta_{n} = e_n^Y f'(V_n)$$
+
+    The \crefrange{eqn:error_function}{eqn:delta_x_l} is implemented as described in \crefrange{alg:forward_pass}{alg:update_weights}.

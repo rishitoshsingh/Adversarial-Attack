@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.1.7)  28 JAN 2021 14:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.1.28)  8 FEB 2021 12:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -258,6 +258,71 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \titlewidth=\dimen169
 \titlewidthlast=\dimen170
 \titlewidthfirst=\dimen171
+) (/usr/local/share/texmf/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count294
+\algocf@hangindent=\skip64
+ (/usr/local/share/texmf/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count295
+) (/usr/share/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+) (/usr/local/share/texmf/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip65
+\skiplinenumber=\skip66
+\skiprule=\skip67
+\skiphlne=\skip68
+\skiptext=\skip69
+\skiplength=\skip70
+\algomargin=\skip71
+\skipalgocfslide=\skip72
+\algowidth=\dimen172
+\inoutsize=\dimen173
+\inoutindent=\dimen174
+\interspacetitleruled=\dimen175
+\interspacealgoruled=\dimen176
+\interspacetitleboxruled=\dimen177
+\algocf@ruledwidth=\skip73
+\algocf@inoutbox=\box59
+\algocf@inputbox=\box60
+\AlCapSkip=\skip74
+\AlCapHSkip=\skip75
+\algoskipindent=\skip76
+\algocf@nlbox=\box61
+\algocf@hangingbox=\box62
+\algocf@untilbox=\box63
+\algocf@skipuntil=\skip77
+\algocf@capbox=\box64
+\algocf@lcaptionbox=\skip78
+\algoheightruledefault=\skip79
+\algoheightrule=\skip80
+\algotitleheightruledefault=\skip81
+\algotitleheightrule=\skip82
+\c@algocfline=\count296
+\c@algocfproc=\count297
+\c@algocf=\count298
+\algocf@algoframe=\box65
+\algocf@algobox=\box66
+) (/usr/local/share/texmf/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+ (/usr/local/share/texmf/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count299
+\c@ALG@rem=\count300
+\c@ALG@nested=\count301
+\ALG@tlm=\skip83
+\ALG@thistlm=\skip84
+\c@ALG@Lnr=\count302
+\c@ALG@blocknr=\count303
+\c@ALG@storecount=\count304
+\c@ALG@tmpcounter=\count305
+\ALG@tmplength=\skip85
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
  (/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
@@ -271,9 +336,9 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 ) (/usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen172
-\Hy@linkcounter=\count294
-\Hy@pagecounter=\count295
+\@linkdim=\dimen178
+\Hy@linkcounter=\count306
+\Hy@pagecounter=\count307
  (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -281,7 +346,7 @@ Now handling font encoding PD1 ...
 ) (/usr/share/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count296
+\Hy@SavedSpaceFactor=\count308
 Package hyperref Info: Option `colorlinks' set `true' on input line 4338.
 Package hyperref Info: Hyper figures OFF on input line 4464.
 Package hyperref Info: Link nesting OFF on input line 4469.
@@ -290,21 +355,21 @@ Package hyperref Info: Plain pages OFF on input line 4479.
 Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4717.
-\c@Hy@tempcnt=\count297
+\c@Hy@tempcnt=\count309
  (/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5076.
-\XeTeXLinkMargin=\dimen173
+\XeTeXLinkMargin=\dimen179
  (/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count298
-\Field@Width=\dimen174
-\Fld@charsize=\dimen175
+\Fld@menulength=\count310
+\Field@Width=\dimen180
+\Fld@charsize=\dimen181
 Package hyperref Info: Hyper figures OFF on input line 6347.
 Package hyperref Info: Link nesting OFF on input line 6352.
 Package hyperref Info: Hyper index ON on input line 6355.
@@ -318,9 +383,9 @@ LaTeX Info: Redefining \pageref on input line 6421.
 Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi package
 with kernel methods
 )
-\Hy@abspage=\count299
-\c@Item=\count300
-\c@Hfootnote=\count301
+\Hy@abspage=\count311
+\c@Item=\count312
+\c@Hfootnote=\count313
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
@@ -329,8 +394,8 @@ File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery package
 with kernel methods
 )
-\Fld@listcount=\count302
-\c@bookmark@seq@number=\count303
+\Fld@listcount=\count314
+\c@bookmark@seq@number=\count315
  (/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
  (/usr/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -338,7 +403,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
-\Hy@SectionHShift=\skip64
+\Hy@SectionHShift=\skip86
 ) (/usr/local/share/texmf/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2370.
@@ -352,6 +417,8 @@ LaTeX Info: Redefining \cpagerefrange on input line 2370.
 LaTeX Info: Redefining \Cpagerefrange on input line 2370.
 LaTeX Info: Redefining \labelcref on input line 2370.
 LaTeX Info: Redefining \labelcpageref on input line 2370.
+Package cleveref Info: `algorithmicx' support loaded on input line 3120.
+Package cleveref Info: `algorithm2e' support loaded on input line 3147.
 ) (/usr/share/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
@@ -362,44 +429,44 @@ Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
  (/usr/share/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen176
-\captionmargin@=\dimen177
-\captionwidth=\dimen178
-\caption@tempdima=\dimen179
-\caption@indent=\dimen180
-\caption@parindent=\dimen181
-\caption@hangindent=\dimen182
+\captionmargin=\dimen182
+\captionmargin@=\dimen183
+\captionwidth=\dimen184
+\caption@tempdima=\dimen185
+\caption@indent=\dimen186
+\caption@parindent=\dimen187
+\caption@hangindent=\dimen188
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count304
-\c@continuedfloat=\count305
+\c@caption@flags=\count316
+\c@continuedfloat=\count317
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 )
-\c@subfigure=\count306
-\c@subtable=\count307
+\c@subfigure=\count318
+\c@subtable=\count319
 ) (/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count308
-\Gm@cntv=\count309
-\c@Gm@tempcnt=\count310
-\Gm@bindingoffset=\dimen183
-\Gm@wd@mp=\dimen184
-\Gm@odd@mp=\dimen185
-\Gm@even@mp=\dimen186
-\Gm@layoutwidth=\dimen187
-\Gm@layoutheight=\dimen188
-\Gm@layouthoffset=\dimen189
-\Gm@layoutvoffset=\dimen190
+\Gm@cnth=\count320
+\Gm@cntv=\count321
+\c@Gm@tempcnt=\count322
+\Gm@bindingoffset=\dimen189
+\Gm@wd@mp=\dimen190
+\Gm@odd@mp=\dimen191
+\Gm@even@mp=\dimen192
+\Gm@layoutwidth=\dimen193
+\Gm@layoutheight=\dimen194
+\Gm@layouthoffset=\dimen195
+\Gm@layoutvoffset=\dimen196
 \Gm@dimlist=\toks28
 ) (/usr/local/share/texmf/tex/latex/appendix/appendix.sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
-\c@@pps=\count311
-\c@@ppsavesec=\count312
-\c@@ppsaveapp=\count313
+\c@@pps=\count323
+\c@@ppsavesec=\count324
+\c@@ppsaveapp=\count325
 ) (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
  (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -417,37 +484,37 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count314
-\l__pdf_internal_box=\box59
+\l__kernel_color_stack_int=\count326
+\l__pdf_internal_box=\box67
 ) (/home/rishi/Documents/Adversarial-Attack/paper/paper.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count315
-\scratchdimen=\dimen191
-\scratchbox=\box60
-\nofMPsegments=\count316
-\nofMParguments=\count317
+\scratchcounter=\count327
+\scratchdimen=\dimen197
+\scratchbox=\box68
+\nofMPsegments=\count328
+\nofMParguments=\count329
 \everyMPshowfont=\toks29
-\MPscratchCnt=\count318
-\MPscratchDim=\dimen192
-\MPnumerator=\count319
-\makeMPintoPDFobject=\count320
+\MPscratchCnt=\count330
+\MPscratchDim=\dimen198
+\MPnumerator=\count331
+\makeMPintoPDFobject=\count332
 \everyMPtoPDFconversion=\toks30
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -455,7 +522,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 20.
+Package hyperref Info: Link coloring ON on input line 22.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -463,11 +530,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count321
+\c@section@level=\count333
 )
-LaTeX Info: Redefining \ref on input line 20.
-LaTeX Info: Redefining \pageref on input line 20.
-LaTeX Info: Redefining \nameref on input line 20.
+LaTeX Info: Redefining \ref on input line 22.
+LaTeX Info: Redefining \pageref on input line 22.
+LaTeX Info: Redefining \nameref on input line 22.
  (/home/rishi/Documents/Adversarial-Attack/paper/paper.out) (/home/rishi/Documents/Adversarial-Attack/paper/paper.out)
 \@outlinefile=\write5
 Package caption Info: Begin \AtBeginDocument code.
@@ -507,162 +574,66 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 24.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (/home/rishi/Documents/Adversarial-Attack/paper/sections/abstract.tex) (/home/rishi/Documents/Adversarial-Attack/paper/sections/introduction.tex
-<images/introduction_neural.png, id=108, 1284.8pt x 793.96625pt>
-File: images/introduction_neural.png Graphic file (type png)
-<use images/introduction_neural.png>
-Package pdftex.def Info: images/introduction_neural.png  used on input line 11.
-(pdftex.def)             Requested size: 150.64641pt x 93.09114pt.
-<images/deep_neural_network.jpeg, id=112, 803.0pt x 534.99875pt>
-File: images/deep_neural_network.jpeg Graphic file (type jpg)
-<use images/deep_neural_network.jpeg>
-Package pdftex.def Info: images/deep_neural_network.jpeg  used on input line 34.
-(pdftex.def)             Requested size: 150.64641pt x 100.36916pt.
+) (/home/rishi/Documents/Adversarial-Attack/paper/sections/learning_rule.tex) (/home/rishi/Documents/Adversarial-Attack/paper/sections/algorithms.tex
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (/home/rishi/Documents/Adversarial-Attack/paper/sections/performance.tex
+<images/trained_predictions.jpg, id=21, 571.29436pt x 577.61798pt>
+File: images/trained_predictions.jpg Graphic file (type jpg)
+<use images/trained_predictions.jpg>
+Package pdftex.def Info: images/trained_predictions.jpg  used on input line 10.
+(pdftex.def)             Requested size: 251.07481pt x 253.85303pt.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- </home/rishi/Documents/Adversarial-Attack/paper/images/introduction_neural.png (PNG copy)>]) (/home/rishi/Documents/Adversarial-Attack/paper/sections/adversarial_machine_learning.tex) (/home/rishi/Documents/Adversarial-Attack/paper/sections/definitions_and_notations.tex [2 </home/rishi/Documents/Adversarial-Attack/paper/images/deep_neural_network.jpeg>] [3]) (/home/rishi/Documents/Adversarial-Attack/paper/sections/some_adversarial_attacks.tex
-<images/panda_attack.png, id=157, 2007.5pt x 796.9775pt>
-File: images/panda_attack.png Graphic file (type png)
-<use images/panda_attack.png>
-Package pdftex.def Info: images/panda_attack.png  used on input line 8.
-(pdftex.def)             Requested size: 200.86061pt x 79.73889pt.
-<images/example1.png, id=159, 1284.8pt x 630.355pt>
-File: images/example1.png Graphic file (type png)
-<use images/example1.png>
-Package pdftex.def Info: images/example1.png  used on input line 17.
-(pdftex.def)             Requested size: 175.7516pt x 86.2196pt.
-<images/example2.png, id=161, 1174.3875pt x 583.17876pt>
-File: images/example2.png Graphic file (type png)
-<use images/example2.png>
-Package pdftex.def Info: images/example2.png  used on input line 25.
-(pdftex.def)             Requested size: 100.42839pt x 49.86763pt.
-<images/example3.png, id=163, 1053.9375pt x 578.16pt>
-File: images/example3.png Graphic file (type png)
-<use images/example3.png>
-Package pdftex.def Info: images/example3.png  used on input line 34.
-(pdftex.def)             Requested size: 100.42839pt x 55.08456pt.
- [4 </home/rishi/Documents/Adversarial-Attack/paper/images/panda_attack.png (PNG copy)> </home/rishi/Documents/Adversarial-Attack/paper/images/example1.png (PNG copy)> </home/rishi/Documents/Adversarial-Attack/paper/images/example2.png (PNG copy)>]
-<images/example4.png, id=179, 986.68625pt x 612.2875pt>
-File: images/example4.png Graphic file (type png)
-<use images/example4.png>
-Package pdftex.def Info: images/example4.png  used on input line 43.
-(pdftex.def)             Requested size: 175.7516pt x 109.05783pt.
-<images/example5.png, id=181, 1870.99pt x 736.7525pt>
-File: images/example5.png Graphic file (type png)
-<use images/example5.png>
-Package pdftex.def Info: images/example5.png  used on input line 52.
-(pdftex.def)             Requested size: 251.07481pt x 98.86147pt.
-) (/home/rishi/Documents/Adversarial-Attack/paper/sections/non_targeted_and_targated_attacks.tex
-<images/non_targeted1.png, id=184, 554.07pt x 220.825pt>
-File: images/non_targeted1.png Graphic file (type png)
-<use images/non_targeted1.png>
-Package pdftex.def Info: images/non_targeted1.png  used on input line 12.
-(pdftex.def)             Requested size: 175.7516pt x 70.04544pt.
- [5 </home/rishi/Documents/Adversarial-Attack/paper/images/example3.png (PNG copy)> </home/rishi/Documents/Adversarial-Attack/paper/images/example4.png (PNG copy)> </home/rishi/Documents/Adversarial-Attack/paper/images/example5.png> </home/rishi/Documents/Adversarial-Attack/paper/images/non_targeted1.png (PNG copy)>]
-<images/mnist.png, id=196, 803.0pt x 602.25pt>
-File: images/mnist.png Graphic file (type png)
-<use images/mnist.png>
-Package pdftex.def Info: images/mnist.png  used on input line 30.
-(pdftex.def)             Requested size: 125.5374pt x 94.14728pt.
-<images/adversarial1.png, id=201, 597.23125pt x 302.12875pt>
-File: images/adversarial1.png Graphic file (type png)
-<use images/adversarial1.png>
-Package pdftex.def Info: images/adversarial1.png  used on input line 54.
-(pdftex.def)             Requested size: 256.07481pt x 129.544pt.
-<images/adversarial2.png, id=202, 597.23125pt x 302.12875pt>
-File: images/adversarial2.png Graphic file (type png)
-<use images/adversarial2.png>
-Package pdftex.def Info: images/adversarial2.png  used on input line 60.
-(pdftex.def)             Requested size: 256.07481pt x 129.544pt.
-<images/adversarial3.png, id=203, 597.23125pt x 302.12875pt>
-File: images/adversarial3.png Graphic file (type png)
-<use images/adversarial3.png>
-Package pdftex.def Info: images/adversarial3.png  used on input line 66.
-(pdftex.def)             Requested size: 256.07481pt x 129.544pt.
-<images/adversarial4.png, id=204, 597.23125pt x 302.12875pt>
-File: images/adversarial4.png Graphic file (type png)
-<use images/adversarial4.png>
-Package pdftex.def Info: images/adversarial4.png  used on input line 72.
-(pdftex.def)             Requested size: 256.07481pt x 129.544pt.
+]
+<images/generated_adversarial_images.jpg, id=62, 529.7391pt x 1396.07573pt>
+File: images/generated_adversarial_images.jpg Graphic file (type jpg)
+<use images/generated_adversarial_images.jpg>
+Package pdftex.def Info: images/generated_adversarial_images.jpg  used on input line 21.
+(pdftex.def)             Requested size: 251.07481pt x 661.673pt.
+<images/generated_adversarial_images_unsuccessful.jpg, id=63, 847.54643pt x 885.84952pt>
+File: images/generated_adversarial_images_unsuccessful.jpg Graphic file (type jpg)
+<use images/generated_adversarial_images_unsuccessful.jpg>
+Package pdftex.def Info: images/generated_adversarial_images_unsuccessful.jpg  used on input line 28.
+(pdftex.def)             Requested size: 251.07481pt x 262.41821pt.
+) (/home/rishi/Documents/Adversarial-Attack/paper/sections/appendix.tex
+Underfull \vbox (badness 1303) has occurred while \output is active []
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 52--76
-[]$[]$
- []
+ [2 </home/rishi/Documents/Adversarial-Attack/paper/images/trained_predictions.jpg>] [3 </home/rishi/Documents/Adversarial-Attack/paper/images/generated_adversarial_images.jpg> </home/rishi/Documents/Adversarial-Attack/paper/images/generated_adversarial_images_unsuccessful.jpg>]) (/home/rishi/Documents/Adversarial-Attack/paper/paper.bbl
 
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 52--76
-[]$
- []
+) [4
 
-
-Overfull \hbox (5.0pt too wide) in paragraph at lines 52--76
-[]$
- []
-
-
-Overfull \hbox (5.0pt too wide) in paragraph at lines 52--76
-[]$ 
- []
-
-) (/home/rishi/Documents/Adversarial-Attack/paper/sections/protecting_agains_adversarial.tex
-File: images/adversarial1.png Graphic file (type png)
-<use images/adversarial1.png>
-Package pdftex.def Info: images/adversarial1.png  used on input line 9.
-(pdftex.def)             Requested size: 175.7516pt x 88.91052pt.
-<images/thresholding.png, id=205, 594.22pt x 302.12875pt>
-File: images/thresholding.png Graphic file (type png)
-<use images/thresholding.png>
-Package pdftex.def Info: images/thresholding.png  used on input line 15.
-(pdftex.def)             Requested size: 175.7516pt x 89.36232pt.
-<images/panda_thresholding.png, id=207, 702.625pt x 352.31625pt>
-File: images/panda_thresholding.png Graphic file (type png)
-<use images/panda_thresholding.png>
-Package pdftex.def Info: images/panda_thresholding.png  used on input line 23.
-(pdftex.def)             Requested size: 175.7516pt x 88.12723pt.
- [6 </home/rishi/Documents/Adversarial-Attack/paper/images/mnist.png (PNG copy)>] [7 </home/rishi/Documents/Adversarial-Attack/paper/images/adversarial1.png> </home/rishi/Documents/Adversarial-Attack/paper/images/adversarial2.png> </home/rishi/Documents/Adversarial-Attack/paper/images/adversarial3.png> </home/rishi/Documents/Adversarial-Attack/paper/images/adversarial4.png> </home/rishi/Documents/Adversarial-Attack/paper/images/thresholding.png> </home/rishi/Documents/Adversarial-Attack/paper/images/panda_thresholding.png (PNG copy)>]
-<images/functions.png, id=231, 1284.8pt x 330.23375pt>
-File: images/functions.png Graphic file (type png)
-<use images/functions.png>
-Package pdftex.def Info: images/functions.png  used on input line 39.
-(pdftex.def)             Requested size: 251.07481pt x 64.53389pt.
-) (/home/rishi/Documents/Adversarial-Attack/paper/sections/conclusion.tex
-Underfull \vbox (badness 2277) has occurred while \output is active []
-
-)
-Underfull \hbox (badness 2237) in paragraph at lines 6--38
-\OT1/cmr/m/n/10 They show us that al-though we have made great
- []
-
-
-Underfull \hbox (badness 2359) in paragraph at lines 6--38
-\OT1/cmr/m/n/10 leaps and bounds there is still much that we do
- []
-
-(/home/rishi/Documents/Adversarial-Attack/paper/sections/appendix.tex [8 </home/rishi/Documents/Adversarial-Attack/paper/images/functions.png (PNG copy)>]) (/home/rishi/Documents/Adversarial-Attack/paper/paper.bbl) [9] (/home/rishi/Documents/Adversarial-Attack/paper/paper.aux)
+] (/home/rishi/Documents/Adversarial-Attack/paper/paper.aux)
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 2675A23A86CC55957401351F36ECD874;1736.
+(rerunfilecheck)             Checksum: 313ADBE4EDE1E38AE9B7E42CC270247F;151.
  ) 
 Here is how much of TeX's memory you used:
- 13898 strings out of 479383
- 241288 string characters out of 5875831
- 617411 words of memory out of 5000000
- 30669 multiletter control sequences out of 15000+600000
- 413256 words of font info for 64 fonts, out of 8000000 for 9000
+ 15082 strings out of 479383
+ 258800 string characters out of 5875830
+ 650842 words of memory out of 5000000
+ 31903 multiletter control sequences out of 15000+600000
+ 412772 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,14n,85p,1626b,517s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on /home/rishi/Documents/Adversarial-Attack/paper/paper.pdf (9 pages, 3817512 bytes).
+ 79i,24n,85p,853b,558s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on /home/rishi/Documents/Adversarial-Attack/paper/paper.pdf (4 pages, 3209167 bytes).
 PDF statistics:
- 336 PDF objects out of 1000 (max. 8388607)
- 283 compressed objects within 3 object streams
- 84 named destinations out of 1000 (max. 500000)
- 294 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 163 PDF objects out of 1000 (max. 8388607)
+ 137 compressed objects within 2 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 40 words of extra memory for PDF output out of 10000 (max. 10000000)
 
