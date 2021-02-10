@@ -5,7 +5,7 @@
 
         The compiled network is trained on a subset of MNIST dataset consisting of random $600$ training samples and $100$ testing samples. The network was able to achieve training accuracy of $96\%$ and testing accuracy of $89\%$. \Cref{fig:training_results} illustrates testing performance of trained network.
 
-        \begin{figure}[htbp]
+        \begin{figure}[H]
             \centering
             \includegraphics[width=\linewidth]{images/trained_predictions.jpg}
             \caption{Predictions of trained network on test set}
@@ -14,19 +14,40 @@
 
     \subsection*{Target Adversarial Attack}
 
-        For generating adversarial images, \crefrange{alg:generate_image}{alg:update_weights} are used where  adversary just need to pass target image $(x^{Adv})$ and goal $(Y^{Adv})$ in \cref{alg:generate_image}. For generating adversarial images $\lambda = 0.8$ is considered. A noise will be generated as an adversarial image if $\lambda = 0$ is considered. \Cref{fig:adversarial_images} consists of all generated adversarial images using which target adversarial attack was successful. Some generated images as shown in \cref{fig:adversarial_images_unsuccessful} were not able to fool the trained network, but it is worth to notice that network confidence in correctly predicting particular image is decreased. 
+        For generating adversarial images, \crefrange{alg:generate_image}{alg:update_weights} are used where  adversary just need to pass target image $(x^{Adv})$ and goal $(Y^{Adv})$ in \cref{alg:generate_image}. For generating adversarial images $\lambda = 0.8$ is considered. A noise will be generated as an adversarial image if $\lambda = 0$ is considered. \Cref{fig:adversarial_images} consists of all generated adversarial images using which target adversarial attack was successful. In \cref{fig:adversarial_images} it can also be observed how prediction confidence changed when adversarial image is used. Some generated images as shown in \cref{fig:adversarial_images_unsuccessful} were not able to fool the trained network, but it is worth to notice that network confidence in correctly predicting particular image is decreased, so they can be termed as incomplete attacks.    
 
-        \begin{figure}[htbp]
+        \begin{figure}[H]
             \centering
-            \includegraphics[width=\linewidth]{images/generated_adversarial_images.jpg}
-            \caption{Some target adversarial images (in left) and generated adversarial images (in right) with adversary goal and actual prediction}
+            \begin{subfigure}{0.7\linewidth}
+                \centering
+                \includegraphics[width=\textwidth]{images/generated_adversarial_image_3.jpg}
+                \caption{}
+            \end{subfigure}
+            % \begin{subfigure}{0.7\linewidth}
+            %     \centering
+            %     \includegraphics[width=\textwidth]{images/generated_adversarial_image_2.jpg}
+            %     \caption{}
+            % \end{subfigure}
+            \begin{subfigure}{0.7\linewidth}
+                \centering
+                \includegraphics[width=\textwidth]{images/generated_adversarial_image_4.jpg}
+                \caption{}
+            \end{subfigure}
+            \caption{Some original images (in left) and generated adversarial images (in right) with their prediction (below)}
             \label{fig:adversarial_images}
         \end{figure}
 
-        \begin{figure}[htbp]
+        % \begin{figure}[htbp]
+        %     \centering
+        %     \includegraphics[width=\linewidth]{images/generated_adversarial_images.jpg}
+        %     \caption{Some target adversarial images (in left) and generated adversarial images (in right) with adversary goal and actual prediction}
+        %     \label{fig:adversarial_images}
+        % \end{figure}
+
+        \begin{figure}[!h]
             \centering
             \includegraphics[width=\linewidth]{images/generated_adversarial_images_unsuccessful.jpg}
-            \caption{Some target adversarial images (in left) and generated adversarial images (in right) with adversary goal and actual prediction}
+            \caption{Some generated adversarial images (in left) using which attack was not successful with its prediction (in right)}
             \label{fig:adversarial_images_unsuccessful}
         \end{figure}
 

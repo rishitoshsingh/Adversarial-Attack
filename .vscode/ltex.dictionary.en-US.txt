@@ -1,1 +1,4 @@
 backpropagation
+LSTM
+MNIST
+susceptive

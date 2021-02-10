@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.1.28)  8 FEB 2021 12:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.1.28)  9 FEB 2021 10:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -589,7 +589,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (/home/rishi/Documents/Adversarial-Attack/paper/sections/performance.tex
-<images/trained_predictions.jpg, id=21, 571.29436pt x 577.61798pt>
+<images/trained_predictions.jpg, id=25, 571.29436pt x 577.61798pt>
 File: images/trained_predictions.jpg Graphic file (type jpg)
 <use images/trained_predictions.jpg>
 Package pdftex.def Info: images/trained_predictions.jpg  used on input line 10.
@@ -598,42 +598,50 @@ Package pdftex.def Info: images/trained_predictions.jpg  used on input line 10.
 
 
 ]
-<images/generated_adversarial_images.jpg, id=62, 529.7391pt x 1396.07573pt>
-File: images/generated_adversarial_images.jpg Graphic file (type jpg)
-<use images/generated_adversarial_images.jpg>
-Package pdftex.def Info: images/generated_adversarial_images.jpg  used on input line 21.
-(pdftex.def)             Requested size: 251.07481pt x 661.673pt.
-<images/generated_adversarial_images_unsuccessful.jpg, id=63, 847.54643pt x 885.84952pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<images/generated_adversarial_image_3.jpg, id=67, 414.1071pt x 428.4808pt>
+File: images/generated_adversarial_image_3.jpg Graphic file (type jpg)
+<use images/generated_adversarial_image_3.jpg>
+Package pdftex.def Info: images/generated_adversarial_image_3.jpg  used on input line 23.
+(pdftex.def)             Requested size: 175.7516pt x 181.85675pt.
+<images/generated_adversarial_image_4.jpg, id=68, 414.1071pt x 428.4808pt>
+File: images/generated_adversarial_image_4.jpg Graphic file (type jpg)
+<use images/generated_adversarial_image_4.jpg>
+Package pdftex.def Info: images/generated_adversarial_image_4.jpg  used on input line 33.
+(pdftex.def)             Requested size: 175.7516pt x 181.85675pt.
+<images/generated_adversarial_images_unsuccessful.jpg, id=69, 847.54643pt x 885.84952pt>
 File: images/generated_adversarial_images_unsuccessful.jpg Graphic file (type jpg)
 <use images/generated_adversarial_images_unsuccessful.jpg>
-Package pdftex.def Info: images/generated_adversarial_images_unsuccessful.jpg  used on input line 28.
+Package pdftex.def Info: images/generated_adversarial_images_unsuccessful.jpg  used on input line 49.
 (pdftex.def)             Requested size: 251.07481pt x 262.41821pt.
-) (/home/rishi/Documents/Adversarial-Attack/paper/sections/appendix.tex
-Underfull \vbox (badness 1303) has occurred while \output is active []
 
- [2 </home/rishi/Documents/Adversarial-Attack/paper/images/trained_predictions.jpg>] [3 </home/rishi/Documents/Adversarial-Attack/paper/images/generated_adversarial_images.jpg> </home/rishi/Documents/Adversarial-Attack/paper/images/generated_adversarial_images_unsuccessful.jpg>]) (/home/rishi/Documents/Adversarial-Attack/paper/paper.bbl
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (/home/rishi/Documents/Adversarial-Attack/paper/sections/conclusion.tex [2 </home/rishi/Documents/Adversarial-Attack/paper/images/trained_predictions.jpg> </home/rishi/Documents/Adversarial-Attack/paper/images/generated_adversarial_image_3.jpg> </home/rishi/Documents/Adversarial-Attack/paper/images/generated_adversarial_image_4.jpg>]) (/home/rishi/Documents/Adversarial-Attack/paper/sections/appendix.tex) (/home/rishi/Documents/Adversarial-Attack/paper/paper.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [4
+) [3 </home/rishi/Documents/Adversarial-Attack/paper/images/generated_adversarial_images_unsuccessful.jpg>] [4
 
 ] (/home/rishi/Documents/Adversarial-Attack/paper/paper.aux)
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 313ADBE4EDE1E38AE9B7E42CC270247F;151.
+(rerunfilecheck)             Checksum: 93C7B07FC2C77EF5B2B31D21AF5293B6;196.
  ) 
 Here is how much of TeX's memory you used:
- 15082 strings out of 479383
- 258800 string characters out of 5875830
- 650842 words of memory out of 5000000
- 31903 multiletter control sequences out of 15000+600000
- 412772 words of font info for 63 fonts, out of 8000000 for 9000
+ 15108 strings out of 479383
+ 259499 string characters out of 5875830
+ 650806 words of memory out of 5000000
+ 31923 multiletter control sequences out of 15000+600000
+ 413071 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,24n,85p,853b,558s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on /home/rishi/Documents/Adversarial-Attack/paper/paper.pdf (4 pages, 3209167 bytes).
+ 79i,24n,85p,1021b,558s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on /home/rishi/Documents/Adversarial-Attack/paper/paper.pdf (4 pages, 4437428 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
- 137 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
- 40 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 173 PDF objects out of 1000 (max. 8388607)
+ 145 compressed objects within 2 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
